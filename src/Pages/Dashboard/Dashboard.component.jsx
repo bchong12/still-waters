@@ -10,7 +10,7 @@ import keys from "../../keys";
 
 const Dashboard = (props) => {
   const [settingsBox, toggleSettingsBox] = useState(false);
-  const [cityName, setCityName] = useState("");
+  const [cityName, setCityName] = useState("Los Angeles");
   const [time, setTime] = useState(null);
   const [dateStr, setDateStr] = useState("");
   const [temp, setTemp] = useState(null);
@@ -19,6 +19,7 @@ const Dashboard = (props) => {
   const [timeAdd, setTimeAdd] = useState(null);
   const [picNum, setPicNum] = useState(null);
   const [intervalId, setIntervalId] = useState(null);
+  const [currentPosition, setCurrentPosition] = useState(false);
 
   const getCity = () => {
     clearInterval(intervalId);
@@ -83,7 +84,6 @@ const Dashboard = (props) => {
           `http://api.openweathermap.org/data/2.5/onecall?lat=${pos.coords.latitude}&lon=${pos.coords.longitude}&units=imperial&exclude=alerts&appid=${keys.WEATHER_APP_API}`
         )
         .then((res) => {
-          console.log("hi");
           const timezone = res.data.timezone;
           const weather = res.data.current.weather[0];
           const nextWeather = res.data.daily[0].temp;
@@ -100,6 +100,7 @@ const Dashboard = (props) => {
           setDate();
           setTimes();
           setTimeAdds();
+          setCurrentPosition(true);
           props.getDate(date);
 
           setTemp(`${Math.round(res.data.current.temp)}°`);
@@ -128,7 +129,11 @@ const Dashboard = (props) => {
 
     setPicNum(Math.floor(Math.random() * 42));
 
-    getCurrentWeatherAndTime();
+    // getCurrentWeatherAndTime();
+
+    if (currentPosition === false) {
+      getCity();
+    }
 
     return () => {
       clearInterval(intervalId);
