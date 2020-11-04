@@ -129,7 +129,7 @@ const Dashboard = (props) => {
 
     setPicNum(Math.floor(Math.random() * 42));
 
-    // getCurrentWeatherAndTime();
+    getCurrentWeatherAndTime();
 
     if (currentPosition === false) {
       getCity();
