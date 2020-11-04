@@ -83,6 +83,7 @@ const Dashboard = (props) => {
           `http://api.openweathermap.org/data/2.5/onecall?lat=${pos.coords.latitude}&lon=${pos.coords.longitude}&units=imperial&exclude=alerts&appid=${keys.WEATHER_APP_API}`
         )
         .then((res) => {
+          console.log("hi");
           const timezone = res.data.timezone;
           const weather = res.data.current.weather[0];
           const nextWeather = res.data.daily[0].temp;
