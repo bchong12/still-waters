@@ -1,0 +1,77 @@
+.journal.devo-page {
+  display: flex;
+  flex-direction: column;
+  height: 160vh;
+}
+
+.date {
+  height: 50px;
+}
+
+.margins {
+  margin-top: 30px;
+}
+
+.bible-box {
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 285px;
+}
+
+.books {
+  width: 100px;
+}
+
+.chapters {
+  width: 65px;
+}
+
+.verses {
+  width: 60px;
+}
+
+.devos {
+  padding: 3px 0px;
+  padding-left: 5px;
+  height: 25px;
+  margin-left: 10px;
+}
+
+.analysis {
+  width: 80vw;
+}
+
+.chapter-text {
+  margin-right: 5px;
+}
+
+.book-text {
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
+.devobutton {
+  margin-left: 39vw;
+  padding: 20px 140px;
+  width: 300px;
+  border: none;
+  background-color: #3d4f5f;
+  color: rgb(241, 241, 241);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  border-radius: 10px;
+}
+
+.devobutton:focus {
+  outline: none;
+}
+
+.devobutton:hover {
+  cursor: pointer;
+  background-color: #334453;
+}

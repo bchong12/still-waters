@@ -1,0 +1,88 @@
+@media screen and (max-width: 300px) {
+  .auth-title {
+    font-size: 20px;
+  }
+  .auth-logo {
+    height: 100px;
+    width: 200px;
+    margin-bottom: 20px;
+    margin-top: 90px;
+  }
+}
+
+@media screen and (min-width: 301px) and (max-width: 319px) {
+  .auth-title {
+    font-size: 35px;
+  }
+  .auth-logo {
+    height: 250px;
+    width: 300px;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 599px) {
+  .auth-title {
+    font-size: 35px;
+  }
+  .auth-logo {
+    height: 250px;
+    width: 300px;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .auth-title {
+    font-size: 32px;
+    margin-bottom: 45px;
+  }
+  .auth-logo {
+    height: 240px;
+    width: 370px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+  .auth-title {
+    font-size: 45px;
+    margin-bottom: 60px;
+  }
+  .auth-logo {
+    height: 350px;
+    width: 450px;
+    margin-bottom: 0px;
+    margin-top: -50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-title {
+    font-size: 42px;
+    margin-bottom: 50px;
+  }
+  .auth-logo {
+    height: 400px;
+    width: 550px;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 10000000px) {
+  .auth-page {
+    background-color: #4c6175;
+    margin-top: 0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .auth-title {
+    margin-top: 0px;
+    color: black;
+    font-family: "Unica One", cursive;
+    font-weight: bolder;
+  }
+}

@@ -1,0 +1,25 @@
+.buttons-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.buttons {
+  padding: 20px 140px;
+  border-radius: 10px;
+  border: none;
+  background-color: #3d4f5f;
+  color: rgb(241, 241, 241);
+  font-size: 18px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.buttons:focus {
+  outline: none;
+}
+
+.buttons:hover {
+  cursor: pointer;
+  background-color: #334453;
+}

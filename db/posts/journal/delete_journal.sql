@@ -1,0 +1,1 @@
+delete from journal where journal_id = ${journalId} and user_id = ${id};

@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
+
+@media screen and (max-width: 300px) {
+  .auth {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 301px) and (max-width: 319px) {
+  .auth {
+    width: 270px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 599px) {
+  .auth {
+    width: 270px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .auth {
+    width: 320px;
+    padding: 18px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+  .auth {
+    width: 400px;
+    padding: 23px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .auth {
+    width: 420px;
+    padding: 26px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 10000000px) {
+  .auth {
+    font-family: "Quicksand", sans-serif;
+    background-color: rgb(130, 130, 130);
+    color: #e7e7e7;
+    border: none;
+    border-radius: 10px;
+    font-weight: bolder;
+  }
+
+  .auth:focus {
+    outline: none;
+  }
+  .auth:hover {
+    cursor: pointer;
+    background-color: rgb(122, 122, 122);
+  }
+  .dont-have {
+    border: none;
+    background-color: #35414d;
+    color: rgb(2, 2, 163);
+    text-decoration: underline;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 500;
+  }
+  .dont-have:hover {
+    cursor: pointer;
+  }
+  .dont-have:focus {
+    color: purple;
+    outline: none;
+  }
+  .auth.logbox {
+    width: 320px;
+    padding: 18px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+  }
+}

@@ -1,0 +1,1 @@
+delete from devos where devos_id = ${devosId} and user_id = ${id};

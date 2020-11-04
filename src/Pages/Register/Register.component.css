@@ -1,0 +1,38 @@
+.register-page {
+  background-color: #4c6175;
+  margin-top: 0px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.register-box {
+  display: flex;
+  flex-direction: column;
+  background-color: #35414d;
+  border-radius: 10px;
+  padding: 65px 50px;
+}
+.register-title {
+  color: #e7e7e7;
+  font-size: 25px;
+  margin-top: -30px;
+  margin-bottom: 30px;
+}
+.register-input {
+  padding: 16px;
+  width: 284px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  margin-left: 2px;
+  font-size: 15.5px;
+}
+.register-input:focus {
+  outline: none;
+}
+.dont-have-button-auth {
+  margin-top: 5px;
+  margin-bottom: -8px;
+}
