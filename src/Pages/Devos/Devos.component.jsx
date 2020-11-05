@@ -55,7 +55,7 @@ const Devos = (props) => {
           <Link className="Links" to="/dashboard">
             <img
               draggable={false}
-              className="size"
+              className="size nice"
               src={require("../../Assets/icons/noun_waves_2731672.svg")}
               alt="logo-auth"
             />

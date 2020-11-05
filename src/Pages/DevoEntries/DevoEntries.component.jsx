@@ -24,7 +24,7 @@ const DevoEntries = (props) => {
 
   return (
     <div className="journal-entries-page">
-      <section className="header">
+      <section className="header entries">
         <div className="header-left-side">
           <Link className="Links" to="/dashboard">
             <img

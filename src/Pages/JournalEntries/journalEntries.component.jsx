@@ -24,7 +24,7 @@ const JournalEntries = (props) => {
 
   return (
     <div className="journal-entries-page">
-      <section className="header">
+      <section className="header entries">
         <div className="header-left-side">
           <Link className="Links" to="/dashboard">
             <img
@@ -34,7 +34,7 @@ const JournalEntries = (props) => {
               alt="logo-auth"
             />
           </Link>
-          <h1 className="journal-title">Journal Entries</h1>
+          <h1 className="journal-title entries">Journal Entries</h1>
         </div>
 
         <div className="link-box">

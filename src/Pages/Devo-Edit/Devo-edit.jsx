@@ -211,6 +211,7 @@ const DevosEdit = (props) => {
       <section className="box personal-entry">
         <p className="journal-title-sub">Analysis </p>
         <textarea
+          value={analysisText}
           onChange={(e) => {
             setAnalysisText(e.target.value);
           }}
@@ -225,6 +226,7 @@ const DevosEdit = (props) => {
             setPrayerText(e.target.value);
           }}
           className="input journal-entry-input"
+          value={prayerText}
         />
       </section>
 

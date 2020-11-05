@@ -1,89 +1,129 @@
-.journal-entry-box {
-  color: rgb(196, 196, 196);
-  height: 150px;
-  width: 25%;
-  font-weight: bolder;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #344452;
-  border: 1px solid #2e3b47;
-  border-radius: 5px;
+@media screen and (max-height: 450px) {
+  .journal-entry-box {
+    display: none;
+  }
 }
 
-.journal-entry-box:hover {
-  background-color: #2d3a44;
-  cursor: pointer;
+@media screen and (min-width: 450px) and (max-width: 719px) {
+  .eighty-width {
+    width: 480px;
+    margin-right: 50px;
+  }
+  .journal-title.entries {
+    display: none;
+  }
 }
 
-.journal-entries-page {
-  display: flex;
-  height: 100vh;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #4c6175;
+@media screen and (min-width: 720px) and (max-width: 949px) {
+  .eighty-width {
+    margin-right: 80px;
+    width: 700px;
+  }
+  .journal-title.entries {
+    display: none;
+  }
 }
 
-.eighty-width {
-  border: 1px solid black;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  height: 80vh;
-  margin-right: 140px;
-  width: 1145px;
-  align-items: center;
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+  .eighty-width {
+    margin-right: 100px;
+    width: 900px;
+  }
 }
 
-.header {
-  width: 1145px;
-  margin-right: 140px;
-  margin-top: 0px;
+@media screen and (min-width: 1200px) {
+  .eighty-width {
+    margin-right: 140px;
+    width: 1145px;
+  }
 }
 
-.entries-page-line {
-  margin-right: 10vw;
-  margin-bottom: 20px;
-}
+@media screen and (max-width: 10000000px) {
+  .journal-entry-box {
+    color: rgb(196, 196, 196);
+    height: 150px;
+    width: 25%;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #344452;
+    border: 1px solid #2e3b47;
+    border-radius: 5px;
+  }
 
-.search-bar-input {
-  width: 200px;
-  height: 30px;
-  border-radius: 30px;
-  border: 1px solid black;
-  padding-left: 35px;
-  margin-bottom: 20px;
-  position: relative;
-  background: url("../../Assets/icons/loupe.png");
-  background-repeat: no-repeat;
-  background-size: 15px;
-  background-position-x: 10px;
-  background-position-y: 8px;
-  background-color: rgb(100, 100, 100);
-  color: white;
-}
+  .journal-entry-box:hover {
+    background-color: #2d3a44;
+    cursor: pointer;
+  }
 
-.search-bar-input:focus {
-  outline: none;
-}
+  .journal-entries-page {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #4c6175;
+  }
 
-.size {
-  height: 70px;
-  width: 100px;
-  margin-right: 20px;
-  margin-bottom: -7px;
-}
+  .eighty-width {
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 70vh;
+    align-items: center;
+  }
 
-.size:hover {
-  cursor: pointer;
-}
+  .entries-page-line {
+    margin-right: 10vw;
+    margin-bottom: 20px;
+  }
 
-.header-left-side {
-  display: flex;
-  align-items: flex-end;
-}
+  .search-bar-input {
+    width: 200px;
+    height: 30px;
+    border-radius: 30px;
+    border: 1px solid black;
+    padding-left: 35px;
+    margin-bottom: 30px;
+    position: relative;
+    background: url("../../Assets/icons/loupe.png");
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x: 10px;
+    background-position-y: 8px;
+    background-color: rgb(100, 100, 100);
+    color: white;
+    margin-top: 10px;
+  }
 
-.Links {
-  margin-bottom: 0px;
+  .search-bar-input:focus {
+    outline: none;
+  }
+
+  .size {
+    height: 70px;
+    width: 100px;
+    margin-right: 20px;
+    margin-bottom: -7px;
+  }
+
+  .size:hover {
+    cursor: pointer;
+  }
+
+  .header-left-side {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .Links {
+    margin-bottom: 0px;
+  }
+
+  .header.entries {
+    margin-right: 10vw;
+    margin-top: -2vh;
+  }
 }

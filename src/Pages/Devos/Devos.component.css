@@ -1,77 +1,164 @@
-.journal.devo-page {
-  display: flex;
-  flex-direction: column;
-  height: 160vh;
+@media screen and (min-width: 0px) and (max-width: 370px) {
+  .devobutton {
+    display: none;
+  }
+  .journal.devo-page {
+    height: 100vh;
+    width: 100vw;
+  }
+  .size.nice {
+    margin-left: 130px;
+  }
+  .date {
+    display: none;
+  }
+
+  .margins {
+    display: none;
+  }
+
+  .bible-box {
+    display: none;
+  }
+
+  .books {
+    display: none;
+  }
+
+  .chapters {
+    display: none;
+  }
+
+  .verses {
+    display: none;
+  }
+
+  .devos {
+    display: none;
+  }
+
+  .analysis {
+    display: none;
+  }
+
+  .chapter-text {
+    display: none;
+  }
+
+  .book-text {
+    display: none;
+  }
+
+  .devobutton {
+    display: none;
+  }
 }
 
-.date {
-  height: 50px;
+@media screen and (min-width: 371px) and (max-width: 599px) {
+  .devobutton {
+    margin-left: 10vw;
+    font-size: 14px;
+    display: flex;
+  }
+  .journal.devo-page {
+    display: flex;
+    flex-direction: column;
+    height: 160vh;
+  }
 }
 
-.margins {
-  margin-top: 30px;
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  .devobutton {
+    margin-left: 28vw;
+    font-size: 18px;
+    display: flex;
+  }
+  .journal.devo-page {
+    display: flex;
+    flex-direction: column;
+    height: 160vh;
+  }
 }
 
-.bible-box {
-  height: 50px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 285px;
+@media screen and (min-width: 961px) {
+  .devobutton {
+    margin-left: 39vw;
+    font-size: 18px;
+    display: flex;
+  }
+  .journal.devo-page {
+    display: flex;
+    flex-direction: column;
+    height: 160vh;
+  }
 }
+@media screen and (max-width: 10000000px) {
+  .date {
+    height: 50px;
+  }
 
-.books {
-  width: 100px;
-}
+  .margins {
+    margin-top: 30px;
+  }
 
-.chapters {
-  width: 65px;
-}
+  .bible-box {
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 285px;
+  }
 
-.verses {
-  width: 60px;
-}
+  .books {
+    width: 100px;
+  }
 
-.devos {
-  padding: 3px 0px;
-  padding-left: 5px;
-  height: 25px;
-  margin-left: 10px;
-}
+  .chapters {
+    width: 65px;
+  }
 
-.analysis {
-  width: 80vw;
-}
+  .verses {
+    width: 60px;
+  }
 
-.chapter-text {
-  margin-right: 5px;
-}
+  .devos {
+    padding: 3px 0px;
+    padding-left: 5px;
+    height: 25px;
+    margin-left: 10px;
+  }
 
-.book-text {
-  margin-right: 5px;
-  margin-left: 10px;
-}
+  .analysis {
+    width: 80vw;
+  }
 
-.devobutton {
-  margin-left: 39vw;
-  padding: 20px 140px;
-  width: 300px;
-  border: none;
-  background-color: #3d4f5f;
-  color: rgb(241, 241, 241);
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 60px;
-  border-radius: 10px;
-}
+  .chapter-text {
+    margin-right: 5px;
+  }
 
-.devobutton:focus {
-  outline: none;
-}
+  .book-text {
+    margin-right: 5px;
+    margin-left: 10px;
+  }
 
-.devobutton:hover {
-  cursor: pointer;
-  background-color: #334453;
+  .devobutton {
+    padding: 20px 140px;
+    width: 300px;
+    border: none;
+    background-color: #3d4f5f;
+    color: rgb(241, 241, 241);
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    border-radius: 10px;
+  }
+
+  .devobutton:focus {
+    outline: none;
+  }
+
+  .devobutton:hover {
+    cursor: pointer;
+    background-color: #334453;
+  }
 }
